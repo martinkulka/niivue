@@ -2918,7 +2918,7 @@ Niivue.prototype.saveDocument = async function (fileName = "untitled.nvd") {
 Niivue.prototype.loadVolumes = async function (volumeList) {
   this.on("loading", (isLoading) => {
     if (isLoading) {
-      this.loadingText = "loading...";
+      this.loadingText = "";
       this.drawScene();
     } else {
       this.loadingText = this.opts.loadingText;
@@ -2984,7 +2984,7 @@ Niivue.prototype.addMeshFromUrl = async function (meshOptions) {
 Niivue.prototype.loadMeshes = async function (meshList) {
   this.on("loading", (isLoading) => {
     if (isLoading) {
-      this.loadingText = "loading...";
+      this.loadingText = "";
       this.drawScene();
     } else {
       this.loadingText = this.opts.loadingText;
@@ -3021,7 +3021,7 @@ Niivue.prototype.loadMeshes = async function (meshList) {
 Niivue.prototype.loadConnectome = async function (json) {
   this.on("loading", (isLoading) => {
     if (isLoading) {
-      this.loadingText = "loading...";
+      this.loadingText = "";
       this.drawScene();
     } else {
       this.loadingText = this.opts.loadingText;
